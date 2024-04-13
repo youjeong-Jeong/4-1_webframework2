@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+}
+h2 {
+    color: #004885;
+    text-align: center;
+}
+.credit_table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+.credit_table th, .credit_table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.credit_table th {
+    background-color: #f2f2f2;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

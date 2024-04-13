@@ -18,6 +18,9 @@
     <title>Please sign in(Custom Login Form)</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.request.contextPath}/resources/css/login.css">
 </head>
 <body>
 <div class="container">
@@ -43,6 +46,10 @@
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"  />
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     </form>
+
+    <c:if test="${not empty logoutMsg}">
+        <button  type="button" onclick = "location.href = '${pageContext.request.contextPath}/'" >홈으로 돌아가기</button>
+    </c:if>
 </div>
 </body>
 

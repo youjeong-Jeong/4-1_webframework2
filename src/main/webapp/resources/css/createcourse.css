@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    color: #004885;
+}
+.formtable {
+    margin: 0 auto;
+    width: 70%;
+    border-collapse: collapse;
+}
+.formtable td, .formtable th {
+    padding: 8px;
+    text-align: left;
+}
+.formtable .label {
+    width: 20%;
+    font-weight: bold;
+}
+.formtable .control {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.formtable .error {
+    color: #ff0000;
+    font-size: 0.85em;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #45a049;
+}

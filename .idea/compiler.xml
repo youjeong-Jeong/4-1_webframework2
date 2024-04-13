@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="helloSpring" />
         <module name="helloSpringMVC" />
+        <module name="CourseManagingSystem" />
       </profile>
     </annotationProcessing>
   </component>

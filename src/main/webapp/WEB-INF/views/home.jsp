@@ -10,19 +10,24 @@
 
 <html>
   <head>
-    <title>$Title$</title>
+    <title>홈페이지</title>
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.request.contextPath}/resources/css/home.css">
   </head>
   <body>
-    <p> <a href="${pageContext.request.contextPath}/offers"> Show current offers</a></p>
-    <p> <a href="${pageContext.request.contextPath}/createoffer"> Add a new offer</a></p>
+  <h1>학사 정보 시스템</h1>
+  <div style="text-align: center;">
+    <a href="${pageContext.request.contextPath}/showcredit" class="button">학년별 이수 학점 조회</a>
+    <a href="${pageContext.request.contextPath}/createcourse" class="button">수강 신청하기</a>
+    <a href="${pageContext.request.contextPath}/courseregist?year=2024&semester=2" class="button">수강 신청 조회</a>
+  </div>
 
-    <c:if test="${pageContext.request.userPrincipal.name != null}">
-      <a href="javascript:document.getElementById('logout').submit()">Logout</a>
-    </c:if>
-
-    <form id="logout"  action="<c:url value="/logout" />"method="post">
-      <input type="hidden" name="${_csrf.parameterName}"value="${_csrf.token}" />
+  <c:if test="${pageContext.request.userPrincipal.name != null}">
+    <form id="logout" action="<c:url value="/logout"/>" method="post" style="text-align: center;">
+      <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+      <button type="submit" class="button">Logout</button>
     </form>
-
+  </c:if>
   </body>
+
 </html>

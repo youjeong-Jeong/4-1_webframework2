@@ -1,0 +1,37 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #4CAF50; /* 초록색 */
+    margin-top: 20px;
+    text-align: center;
+}
+p, form {
+    text-align: center;
+    margin-top: 20px;
+}
+a {
+    color: #4CAF50; /* 초록색 */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #4CAF50; /* 초록색 */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #45a049; /* 더 어두운 초록색 */
+}
