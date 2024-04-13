@@ -1,1 +1,1 @@
-# Spring MVC Template for intellij
+# 과제1 학사 정보 시스템
